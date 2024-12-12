@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link href="fonts/OpenSans-Regular.ttf" rel="stylesheet" type="font/ttf">
+    <title>Язык программирования Go</title>
+</head>
+<body>
+
+    <h1>Язык программирования Go</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#history">История создания</a></li>
+            <li><a href="#overview">Краткий обзор языка</a></li>
+            <li><a href="#examples">Примеры кода</a></li>
+        </ul>
+    </nav>
+
+    <section id="history">
+        <h2>История создания</h2>
+        <p>Язык программирования Go был разработан в Google в 2007 году. Основные разработчики — Роберт Грисмер, Роб Пайк и Кен Томпсон.</p>
+        
+        <img src="logo.jpg" alt="Логотип Go" class="image-left" />
+        
+        <p>Go был официально представлен в 2009 году и быстро завоевал популярность благодаря своей простоте и эффективности.</p>
+
+        <img src="team.jpg" alt="Команда разработчиков Go" class="image-right" />
+
+        <p>Язык был создан для повышения продуктивности разработки программного обеспечения и поддержки современных многопоточных приложений.</p>
+    </section>
+
+    <section id="overview">
+        <h2>Краткий обзор языка</h2>
+        
+        <img src="architecture.jpg" alt="Архитектура Go" class="image-center" />
+
+        <p>Go — это статически типизированный язык с компиляцией, который поддерживает параллелизм и обеспечивает высокую производительность.</p>
+
+        <table>
+            <tr>
+                <th>Особенность</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>Статическая типизация</td>
+                <td>Go использует статическую типизацию для повышения безопасности кода.</td>
+            </tr>
+            <tr>
+                <td>Параллелизм</td>
+                <td>Поддерживает параллелизм через горутины и каналы.</td>
+            </tr>
+            <tr>
+                <td>Простота синтаксиса</td>
+                <td>Синтаксис языка прост и понятен, что облегчает обучение.</td>
+            </tr>
+        </table>
+
+        <h3>Преимущества языка:</h3>
+        
+        <ul>
+            <li>Легкость в изучении</li>
+            <li>Высокая производительность</li>
+            <li>Поддержка многопоточности</li>
+        </ul>
+
+        <h3>Недостатки языка:</h3>
+
+        <ol>
+            <li>Отсутствие generics (на момент написания)</li>
+            <li>Меньшая экосистема по сравнению с другими языками</li>
+        </ol>
+
+    </section>
+
+    <section id="examples">
+        <h2>Примеры кода</h2>
+
+        <pre><code class="language-go">
+import "fmt"
+
+// Функция для вычисления суммы двух чисел
+func sum(a int, b int) int {
+    return a + b
+}
+
+func main() {
+    result := sum(3, 5)
+    fmt.Println("Сумма:", result)
+}
+        </code></pre>
+
+        <p>В этом примере мы видим базовую структуру программы на Go и простую функцию для вычисления суммы двух чисел.</p>
+
+        <h3>Использование языка:</h3>
+
+        <ul class="custom-marker">
+            <li>Веб-разработка</li>
+            <li>Системное программирование</li>
+            <li>Разработка микросервисов</li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <h3>Использованные теги:</h3>
+        <p>&lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;title&gt;, &lt;style&gt;, &lt;body&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;p&gt;, &lt;img&gt;, &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;pre&gt;, &lt;code&gt;, &lt;footer&gt;, &lt;br&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;nav&gt;</p>
+
+        <h3>Использованные CSS-свойства:</h3>
+        <p>font-family, font-size, line-height, margin, padding, background-color, color, text-align, border, border-collapse, overflow-x, box-shadow, float, max-width, display, list-style-type, background-image, background-repeat, background-position, padding-left, margin-bottom</p>
+
+        <h3>Полезные ссылки:</h3>
+        <ul>
+          <li><a href="https://go.dev/" target="_blank">Официальный сайт Go</a></li>
+          <li><a href="#history">Вернуться к истории создания</a></li>
+          <li><a href="#overview">Вернуться к обзору языка</a></li>
+          <li><a href="#examples">Вернуться к примерам кода</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
