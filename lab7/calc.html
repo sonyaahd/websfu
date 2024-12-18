@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="calc-display" value="0" disabled>
+        </div>
+        <div class="buttons">
+            <button class="action" onclick="clearAll()">C</button>
+            <button class="action" onclick="clearEntry()">CE</button>
+            <button class="action" onclick="backspace()">&larr;</button>
+            <button class="operator" onclick="setOperator('/')">/</button>
+
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="setOperator('*')">*</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="setOperator('-')">-</button>
+
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="setOperator('+')">+</button>
+
+            <button onclick="toggleSign()">+/-</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendDot()">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+
+            <button class="operator" onclick="calculatePercent()">%</button>
+            <button class="operator" onclick="calculateReciprocal()">1/x</button>
+            <button class="operator" onclick="calculateSqrt()">&radic;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
