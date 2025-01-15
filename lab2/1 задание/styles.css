@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.number {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px; 
+    height: 250px;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: #eeff00;
+}
+
+.seven .block:nth-child(4),
+.seven .block:nth-child(5),
+.seven .block:nth-child(7),
+.seven .block:nth-child(8),
+.seven .block:nth-child(10),
+.seven .block:nth-child(11),
+.seven .block:nth-child(13),
+.seven .block:nth-child(14) {
+    background-color: transparent;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one .block:not(:first-child) {
+    background-color: #eeff00;
+}
