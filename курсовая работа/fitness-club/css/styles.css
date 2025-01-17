@@ -1,0 +1,558 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+#club-info h2 {
+    font-size: 32px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#club-info p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#news {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+#news h3 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.news-item {
+    margin-bottom: 15px;
+}
+
+.news-item h4 {
+    font-size: 22px;
+    color: #333;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+#gallery {
+    margin-bottom: 30px;
+}
+
+#gallery h3 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trainers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+.trainer {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.trainer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trainer img {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.trainer h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.trainer p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#calendar {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+.calendar-day {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calendar-day:hover {
+    background-color: #f0f0f0;
+}
+
+#trainings {
+    margin-top: 30px;
+}
+
+#trainings ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#trainings li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.booking-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.auth-warning {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+#available-dates {
+    margin-top: 20px;
+}
+
+.date-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.session {
+    background-color: #fafafa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 48%;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.session button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.session button:hover {
+    background-color: #45a049;
+}
+
+#price-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.contacts-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.contact-info p {
+    line-height: 1.6;
+}
+
+.contact-info strong {
+    color: #333;
+}
+
+.club-photo {
+    margin-top: 20px;
+}
+
+.maps-links {
+    margin-top: 20px;
+}
+
+.maps-links h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.maps-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.maps-links ul li {
+    font-size: 16px;
+}
+
+.maps-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.maps-links a:hover {
+    text-decoration: underline;
+}
+
+.reviews-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.add-review, .existing-reviews {
+    margin-top: 20px;
+}
+
+.add-review h3, .existing-reviews h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#reviews-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reviews-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#reviews-list strong {
+    color: #333;
+}
+
+#review-message {
+    color: #007bff;
+}
+
+#review-form {
+    margin-top: 20px;
+}
+
+.profile-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+#login-register {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#user-info {
+    display: none;
+}
+
+#logout-button {
+    margin-top: 20px;
+}
+
+.admin-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+#admin-info {
+    display: block;
+}
+
+#admin-error {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1a2a;
+}
